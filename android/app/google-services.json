@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "289144099014",
+    "project_id": "fir-flutter-d0e5c",
+    "storage_bucket": "fir-flutter-d0e5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289144099014:android:3a95326e20a0cc97ee87c7",
+        "android_client_info": {
+          "package_name": "com.example.final_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289144099014-7gvqf4vrdu3iv719lg3ivagl1n85mulh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJy4lqWZ0EYJa8QJ1MANfuLnHJ0B1nngQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289144099014-7gvqf4vrdu3iv719lg3ivagl1n85mulh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "289144099014-obpo6hjvve17hl24uqmktatdbce9fnqc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hackathon"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289144099014:android:95a7fb660156aeb7ee87c7",
+        "android_client_info": {
+          "package_name": "com.example.firebase_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289144099014-7gvqf4vrdu3iv719lg3ivagl1n85mulh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJy4lqWZ0EYJa8QJ1MANfuLnHJ0B1nngQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289144099014-7gvqf4vrdu3iv719lg3ivagl1n85mulh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "289144099014-obpo6hjvve17hl24uqmktatdbce9fnqc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hackathon"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289144099014:android:0e082ccea18daa74ee87c7",
+        "android_client_info": {
+          "package_name": "com.example.hackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289144099014-7gvqf4vrdu3iv719lg3ivagl1n85mulh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJy4lqWZ0EYJa8QJ1MANfuLnHJ0B1nngQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289144099014-7gvqf4vrdu3iv719lg3ivagl1n85mulh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "289144099014-obpo6hjvve17hl24uqmktatdbce9fnqc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.hackathon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
