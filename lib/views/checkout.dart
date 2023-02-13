@@ -1,10 +1,11 @@
 import 'dart:js_util';
 import 'dart:ui';
 
+import 'package:final_firebase/utiles/color.dart';
+import 'package:final_firebase/widgets/appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:test_ui/properties/colors.dart';
 
 class check_view extends StatefulWidget {
   const check_view({super.key});
@@ -36,30 +37,13 @@ class _check_viewState extends State<check_view> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        
-      leading: Image.asset("login_logo.png"),
-      title: const Text("PANTIFY",style: TextStyle(fontSize: 20,fontWeight: FontWeight.w600,color: Colors.black),),
-      actions: [Row( children: [
-        Padding(
-          padding: const EdgeInsets.only(right: 20),
-          child: Row(children: [
-            const Icon(Icons.search,color: Colors.black,),
-          const SizedBox(width: 10,),
-            Image.asset("Menu.png")
-          ],),
-        ),
-      ],)],
-      backgroundColor: Colors.white,
-      elevation: 0.0,
-      ),
-      body: Column(
+      appBar: cAppbar(bgapp: for2app), body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
 
           Padding(
             padding: const EdgeInsets.only(top: 40,left: 40),
-            child: Text("Your Bag",style: TextStyle(fontSize: 36,fontWeight: FontWeight.w700, color: Colorselect().favcolor)),
+            child: Text("Your Bag",style: TextStyle(fontSize: 36,fontWeight: FontWeight.w700, color: green)),
           ),
 
 Container(
@@ -73,10 +57,10 @@ Container(
               leading: Stack(children: [
                 Positioned(
                   top: 10,
-                  child: Image.asset("rect_1.png")),
+                  child: Image.asset("assets/img_ban/rect_1.png")),
                 Container(
                   height: 200,
-                  child: Image.asset("flwrs_1.png",height: 200 ,)),
+                  child: Image.asset("assets/img_ban/flwrs_1.png",height: 200 ,)),
               ],),  
               title:const Text("Watermelon Peperomia"),    
               subtitle: Padding(
@@ -126,7 +110,7 @@ Container(
                   child: const Text("-",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
                 ),
     ),
-  Icon(Icons.delete_outline_outlined,color: Colorselect().favcolor,size: 36,)
+  Icon(Icons.delete_outline_outlined,color:green,size: 36,)
                   ],
                 ),
               ),
@@ -135,7 +119,7 @@ Container(
               child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-              Image.asset("assets/list_icon.png",height: 100,),
+              Image.asset("assets/img_ban/list_icon.png",height: 100,),
               const SizedBox(width: 20,),
           const  Text("\$360",style: TextStyle(fontSize: 18),)
           ],
@@ -150,10 +134,10 @@ Container(
               leading: Stack(children: [
               Positioned(
               top: 10,
-              child: Image.asset("rect_1.png")),
+              child: Image.asset("assets/img_ban/rect_1.png")),
               Container(
               height: 200,
-              child: Image.asset("flwrs_2.png",height: 200 ,)),
+              child: Image.asset("assets/img_ban/flwrs_2.png",height: 200 ,)),
               ],),
             title:const Text("Watermelon Peperomia"),
             subtitle: Padding(
@@ -201,7 +185,7 @@ Container(
         child: const Text("-",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
         ),
     ),
-  Icon(Icons.delete_outline_outlined,color: Colorselect().favcolor,size: 36,)
+  Icon(Icons.delete_outline_outlined,color: green,size: 36,)
   ],
   ),
   ),
@@ -210,7 +194,7 @@ Container(
   child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-                  Image.asset("assets/list_icon.png",height: 100,),
+                  Image.asset("assets/img_ban/list_icon.png",height: 100,),
                   const SizedBox(width: 20,),
             const Text("\$402",style: TextStyle(fontSize: 18),),
                   ],
@@ -225,10 +209,10 @@ const  SizedBox(height: 18,),
              leading: Stack(children: [           
              Positioned(
              top: 10,
-             child: Image.asset("rect_3.png")),
+             child: Image.asset("assets/img_ban/rect_3.png")),
              Container(
              height: 200,
-             child: Image.asset("flwrs_3.png",height: 0,)),
+             child: Image.asset("assets/img_ban/flwrs_3.png",height: 0,)),
               ],),
               title:const Text("Watermelon Peperomia"),
               subtitle: Padding(
@@ -276,7 +260,7 @@ const  SizedBox(height: 18,),
                   child: const Text("-",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700),),
                 ),
     ),
-  Icon(Icons.delete_outline_outlined,color: Colorselect().favcolor,size: 36,)
+  Icon(Icons.delete_outline_outlined,color: green,size: 36,)
   
                   ],
                 ),
@@ -286,7 +270,7 @@ const  SizedBox(height: 18,),
               child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-              Image.asset("assets/list_icon.png",height: 100,),
+              Image.asset("assets/img_ban/list_icon.png",height: 100,),
               const    SizedBox(width: 10,),
               const    Text("\$360",style: TextStyle(fontSize: 18),)
               ],
@@ -304,20 +288,20 @@ const SizedBox(height: 30,),
 ListTile(
   leading: Stack(
     children: [
-      Image.asset("Eclips_2.png"),
-      Image.asset("menu_img_5.png",height: 60,width: 44,color: Colorselect().favcolor,),
+      Image.asset("assets/img_ban/Eclips_2.png"),
+      Image.asset("assets/img_ban/menu_img_5.png",height: 60,width: 44,color: green,),
     ],
   ),
 
   title: Row(children:  [
    const Text("Delivery",style: TextStyle(height: 2,fontSize: 16,fontWeight: FontWeight.bold),),
     const  SizedBox(width: 20,),
-   Image.asset("line_1.png",),
-   Image.asset("line_2.png",width: 40,),
+   Image.asset("assets/img_ban/line_1.png",),
+   Image.asset("assets/img_ban/line_2.png",width: 40,),
   ],),
   subtitle: Text.rich(TextSpan(text: "Order above ₹1200 to get\nfree delivery",
   children: <InlineSpan>[
-    TextSpan(text: " Shop for more ₹190",style: TextStyle(color: Colorselect().favcolor,height: 2))
+    TextSpan(text: " Shop for more ₹190",style: TextStyle(color: green,height: 2))
   ]
   )),
   trailing: const Text("\$80"),
@@ -331,15 +315,15 @@ ListTile(
 ListTile(
   leading: Stack(
     children: [
-      Image.asset("Eclips_2.png"),
-      Image.asset("Eclips_inside.png",height: 60,width: 44,color: Colorselect().favcolor,),
+      Image.asset("assets/img_ban/Eclips_2.png"),
+      Image.asset("assets/img_ban/Eclips_inside.png",height: 60,width: 44,color: green,),
     ],
   ),
 
   title:const Text("Apply Coupon"),
    subtitle: Positioned(
     top: 100,
-    child: Image.asset("line_1.png")),
+    child: Image.asset("assets/img_ban/line_1.png")),
 ), 
 
 const SizedBox(height: 10,),
@@ -358,7 +342,7 @@ const  SizedBox(height: 8,),
 Container(
   height: 100,
   decoration: BoxDecoration(
-    color: Colorselect().favcolor,
+    color: green,
    borderRadius:const BorderRadius.only(
     topLeft: Radius.circular(20),
     topRight: Radius.circular(20),
@@ -370,11 +354,11 @@ Container(
     
     Padding(
       padding: const EdgeInsets.only(right: 18,left: 18),
-      child: Text("Checkout",style: TextStyle(color: Colorselect().whitecolor,fontSize: 20)),
+      child: Text("Checkout",style: TextStyle(color: for2app,fontSize: 20)),
     ),
     Padding(
       padding: const EdgeInsets.only(right: 18,left: 18),
-      child: Text("\$1090",style: TextStyle(color: Colorselect().whitecolor,fontSize: 20)),
+      child: Text("\$1090",style: TextStyle(color: for2app,fontSize: 20)),
     )
   ],),
 )

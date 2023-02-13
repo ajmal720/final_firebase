@@ -1,7 +1,5 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, camel_case_types
 
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
 class Text_Field extends StatelessWidget {
@@ -18,17 +16,16 @@ class Text_Field extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        child: TextFormField(
-                    
+    return TextFormField(
+                
       controller: text_controller,
       decoration: InputDecoration(
-        
-        
-          hintText: hint_text,
-          labelText: lebel_text,
-          border:
-              OutlineInputBorder(borderRadius: BorderRadius.circular(radius))),
-    ));
+    
+    
+      hintText: hint_text,
+      labelText: lebel_text,
+      border:
+          OutlineInputBorder(borderRadius: BorderRadius.circular(radius))),
+    );
   }
 }

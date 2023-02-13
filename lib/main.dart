@@ -1,4 +1,5 @@
 import 'package:final_firebase/firebase_options.dart';
+import 'package:final_firebase/views/checkout.dart';
 import 'package:final_firebase/views/menu.dart';
 import 'package:final_firebase/views/order_complete.dart';
 import 'package:final_firebase/views/test.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: menu_view(),
+      home: check_view(),
     );
   }
 }

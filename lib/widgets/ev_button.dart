@@ -1,7 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+// ignore_for_file: non_constant_identifier_names
 
+import 'package:flutter/material.dart';
+
+// ignore: camel_case_types
 class Ev_Button extends StatelessWidget {
   final String title;
   final VoidCallback onpress;
@@ -14,7 +15,7 @@ class Ev_Button extends StatelessWidget {
   final double radius;
 
   Ev_Button(
-      {required this.title,
+      {super.key, required this.title,
       required this.onpress,
       this.loading = false,
       required this.height,
@@ -30,6 +31,7 @@ class Ev_Button extends StatelessWidget {
       onTap: onpress,
       child: Container(
         decoration: BoxDecoration(
+          
           borderRadius: BorderRadius.circular(radius),
           color: CantainerColor,
         ),

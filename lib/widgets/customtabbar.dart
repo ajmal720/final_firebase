@@ -34,7 +34,6 @@ class ProfileTabBarNavigation extends StatelessWidget {
         body: TabBarView(
             //   physics:  NeverScrollableScrollPhysics(),
             children: myTabs.map((Tab tab) {
-          final String label = tab.text!.toLowerCase();
           return ListView.builder(
 //               physics: NeverScrollableScrollPhysics(),
             itemCount: 50,
