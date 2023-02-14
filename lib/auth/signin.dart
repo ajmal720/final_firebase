@@ -1,7 +1,7 @@
 import 'package:final_firebase/auth/signup.dart';
 import 'package:final_firebase/utiles/color.dart';
 import 'package:final_firebase/utiles/toast.dart';
-import 'package:final_firebase/views/test.dart';
+import 'package:final_firebase/views/dasboard.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -188,7 +188,7 @@ class _LogInState extends State<LogIn> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(
-                                        top: 0, left: 255),
+                                        top: 0, left: 220),
                                     child: TextButton(
                                         onPressed: (() {
                                           if (_formkey.currentState!

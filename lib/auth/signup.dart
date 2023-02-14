@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../utiles/color.dart';
+import '../views/dasboard.dart';
 
 class SignUpForm extends StatefulWidget {
   const SignUpForm({super.key});
@@ -147,6 +148,9 @@ class _SignUpFormState extends State<SignUpForm> {
                         email: email.text, password: password.text)
                     .then((value) {
                         Utils().toastMessage(value.user!.email.toString());
+                         Navigator.push(
+          context, MaterialPageRoute(builder: ((context) => const Test())));
+
     
                   setState(() {
                     loading = false;

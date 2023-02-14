@@ -14,12 +14,12 @@ class Test extends StatefulWidget {
 }
 
 class _TestState extends State<Test> {
-  final int _currentindex = 0;
+  late int _currentindex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: cAppbar(bgapp: plantb1),
+        appBar: cAppbar(bgapp: for2app),
         body: CustomScrollView(
           slivers: [
             SliverFillRemaining(
@@ -28,14 +28,33 @@ class _TestState extends State<Test> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
-                          image: DecorationImage(
-                              image: AssetImage('assets/img_ban/ban-1.png'),
-                              fit: BoxFit.cover)),
-                      width: 330,
-                      height: 190,
+                    child: Stack(
+                      children: [
+                            Positioned(
+                        child: Container(
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: const DecorationImage(
+                                  image: AssetImage('assets/img_ban/ban-1.png'),
+                                  fit: BoxFit.cover)),
+                          width: 330,
+                          height: 190,
+                        ),
+                      ),
+                      
+                    
+                        Positioned(
+                          top: 43,
+                          left: 34,
+                          child: Text('There’s a Plant ',style: TextStyle(color: black,
+                          fontSize: 24,fontWeight: FontWeight.w700),)),
+                                  Positioned(
+                          top: 70,
+                          left: 34,
+                          child: Text('For Everyone ',style: TextStyle(color: black,
+                          fontSize: 24,fontWeight: FontWeight.w700),)),
+              
+                      ]
                     ),
                   ),
                   const SizedBox(
@@ -92,28 +111,28 @@ class _TestState extends State<Test> {
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: ImageIcon(
-                AssetImage('assets/icons/home1.png'),
+                const AssetImage('assets/icons/home1.png'),
                 color: black,
               ),
               label: '',
             ),
             BottomNavigationBarItem(
               icon: ImageIcon(
-                AssetImage('assets/icons/fav1.png'),
+                const AssetImage('assets/icons/fav1.png'),
                 color: black,
               ),
               label: '',
             ),
             BottomNavigationBarItem(
               icon: ImageIcon(
-                AssetImage('assets/icons/cart.png'),
+                const AssetImage('assets/icons/cart.png'),
                 color: black,
               ),
               label: '',
             ),
             BottomNavigationBarItem(
               icon: ImageIcon(
-                AssetImage('assets/icons/acc.png'),
+                const AssetImage('assets/icons/acc.png'),
                 color: black,
               ),
               label: '',
@@ -121,7 +140,7 @@ class _TestState extends State<Test> {
           ],
           onTap: (Index) {
             setState(() {
-              _currentindex;
+              _currentindex=Index;
             });
           },
         ));
